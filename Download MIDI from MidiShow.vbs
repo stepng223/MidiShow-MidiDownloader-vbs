@@ -52,7 +52,7 @@ Function download(midid,ff)
 		Else
 			Dim Reg
 			Set Reg = new RegExp
-			Reg.Pattern = "[A-Za-z]+://www.midishow.com/midi/[^/s]+"
+			Reg.Pattern = "[A-Za-z]+://https://www.midishow.com/en/midi/ff14-flowers-piano-solo-midi-download-196139[^/s]+"
 			Reg.IgnoreCase = True
 			If Reg.Test(midid) = True Then
 				url = Replace(Replace(midid,"/midi/","/midi/file/"),".html",".mid")
